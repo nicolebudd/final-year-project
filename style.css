@@ -1,0 +1,95 @@
+/* Basic styling for the navbar */
+body {
+    margin: 0;
+    font-family: Tahoma;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212016;
+    padding: 10px 20px;
+}
+
+/* Logo styling */
+.navbar .logo img {
+    display: block;
+}
+
+/* Navigation links styling */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #21B5CB;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 2px solid #333;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+footer {
+    display: block;
+    text-align: center;
+    padding: 3px;
+    background-color: #21B5CB;
+    color: white;
+    font-family: Tahoma;
+}
+
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
